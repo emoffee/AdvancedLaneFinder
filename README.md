@@ -93,4 +93,8 @@ Here's a [link to my video result](./project_video.mp4)
 ---
 
 
+###Discussion
 
+####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+
+I encountered a problem of unreliable plot onto the road such that lane area is clearly identified in the produced video. To be specific, the plotted shape keeps changing instead of staying in the form Trapezoid on the road. After several trial & error, I found I should not just use the class materials about gradient & color threshold, without even tuning min & max for different channel. 
