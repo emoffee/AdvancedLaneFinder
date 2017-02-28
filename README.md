@@ -66,6 +66,7 @@ This resulted in the following source and destination points:
 | 40, 720      | 40, 720        |
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
+
 ![alt text][image4]
 
 ####4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
@@ -75,8 +76,10 @@ I did this with the methods learnt from class materials.
 ####5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 I did this with the methods learnt from class materials.
+
 ![alt text][image5]
 ![alt text][image51]
+
 ####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
 ![alt text][image6]
