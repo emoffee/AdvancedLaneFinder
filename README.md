@@ -38,15 +38,16 @@ I start by preparing "object points"(objp variable below), which will be the (x,
 I then used the output objpoints and imgpoints from camera calibration section above to compute the camera calibration and distortion coefficients using the cv2.calibrateCamera() function. I applied this distortion correction to those test images(stored in test_images folder) using the cv2.undistort() function and obtained this result after the codes below:
 ![alt text][image2]
 ####2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+
+I used a combination of color thresholds & gradients to generate a binary thresholded image:
+The S Channel from the HLS color space, with a min threshold of 170 and a max threshold of 255.
+The SX Channel from the RGB color space, with a min threshold of 50 and a max threshold of 90 in Sobel method.
 
 ![alt text][image3]
 
 ####3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-I used a combination of color thresholds & gradients to generate a binary thresholded image:
-The S Channel from the HLS color space, with a min threshold of 170 and a max threshold of 255.
-The SX Channel from the RGB color space, with a min threshold of 50 and a max threshold of 90 in Sobel method.
+The code for my perspective transform includes a function called warper(), which appears in lines 1 through 8 in the file example.py (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook). The warper() function takes as inputs an image (img), as well as source (src) and destination (dst) points. I chose the hardcode the source and destination points in the following manner:
 
 ```
 src = np.float32([[490, 480],[800, 480],
