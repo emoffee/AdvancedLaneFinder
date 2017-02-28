@@ -13,13 +13,13 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/image1.png "Undistorted"
-[image2]: ./examples/image2.png "Road Transformed"
-[image3]: ./examples/image3.png "Binary Example"
-[image4]: ./examples/image4.png "Warp Example"
-[image5]: ./examples/image5.png "Fit poly"
+[image1]: ./examples/image1.PNG "Undistorted"
+[image2]: ./examples/image2.PNG "Road Transformed"
+[image3]: ./examples/image3.PNG "Binary Example"
+[image4]: ./examples/image4.PNG "Warp Example"
+[image5]: ./examples/image5.PNG "Fit poly"
 [image51]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/image6.png "Output"
+[image6]: ./examples/image6.PNG "Output"
 [video1]: ./project_video.mp4 "Video"
 
 
